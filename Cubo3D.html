@@ -5,7 +5,12 @@
 <body>
    <canvas id="my_canvas" width="1000" height="800"></canvas>
    <script>
-var vertices = [
+      var myCanvas = document.getElementById("my_canvas");
+    var ctx = myCanvas.getContext("3d");
+    function draw(startX, startY, len, angle, branchWidth) {
+        ctx.lineWidth = branchWidth;
+
+       var vertices = [
   // Cara delantera
   -1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0, 1.0, 1.0, -1.0, 1.0, 1.0,
 
