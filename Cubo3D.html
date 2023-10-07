@@ -52,10 +52,6 @@ gl.bufferData(
       var cubeVerticesIndexBuffer = gl.createBuffer();
 gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, cubeVerticesIndexBuffer);
 
-// Este arrelgo define cada cara como 2 triángulos utilizando
-// los índices dentro de cada arreglo de vértices
-// para especificar cada posición en los tríangulos.
-
 var cubeVertexIndices = [
   0,
   1,
@@ -95,7 +91,7 @@ var cubeVertexIndices = [
   23, // izquierda
 ];
 
-// Ahora enviamos el elemento arreglo a  GL
+
 
 gl.bufferData(
   gl.ELEMENT_ARRAY_BUFFER,
